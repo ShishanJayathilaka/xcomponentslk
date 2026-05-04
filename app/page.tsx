@@ -1,5 +1,6 @@
 import Header from "@/components/home/Header";
 import Footer from "@/components/home/Footer";
+import TopRatedDevices from "@/components/home/TopRatedDevices";
 import HeroSection from "@/components/layout/HeroSection";
 import BrandMarquee from "@/components/layout/BrandMarquee";
 import CategoryGrid from "@/components/layout/CategoryGrid";
@@ -12,8 +13,10 @@ export default function HomePage() {
       <main className="flex-grow">
         <HeroSection />
         <BrandMarquee />
-        <CategoryGrid />
       </main>
+
+      <CategoryGrid />
+      <TopRatedDevices />
 
       <Footer />
     </div>

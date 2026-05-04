@@ -1,4 +1,4 @@
-import { ThemeProvider } from "next-themes";
+import AppProviders from "@/components/providers/AppProviders";
 import "./globals.css";
 
 export const metadata = {
@@ -14,9 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
-        </ThemeProvider>
+        <AppProviders>{children}</AppProviders>
       </body>
     </html>
   );
